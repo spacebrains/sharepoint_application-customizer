@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://mastond.sharepoint.com/sites/Dev1",
+      "customActions": {
+        "e1ca069b-cdbf-469c-bcab-d1c7af49759a": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "urlContext": ""
+          }
+        }
+      }
+    },
+    "counter": {
+      "pageUrl": "https://mastond.sharepoint.com/sites/Dev1",
+      "customActions": {
+        "e1ca069b-cdbf-469c-bcab-d1c7af49759a": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "urlContext": ""
+          }
+        }
+      }
+    }
+  }
+}

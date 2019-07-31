@@ -1,0 +1,10 @@
+.links {
+  width: 100%;
+  background-color: #f4f4f4;
+  float: left;
+}
+
+.container {
+  float: right;
+  padding-right: 10px;
+}
