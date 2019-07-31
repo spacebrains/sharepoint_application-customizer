@@ -50,7 +50,6 @@ export default class Counter extends React.PureComponent<ICounterProps, ICounter
     try {
       const {items} = this.state;
       const {url} = this.props;
-      console.log(items);
       const id = items.indexOf(i => i.Url === url);
       if (id + 1) {
         const item = items[id];
@@ -77,7 +76,8 @@ export default class Counter extends React.PureComponent<ICounterProps, ICounter
     try {
       const body: string = JSON.stringify({
         'ID page': url,
-        'view': this.state.counter + 1
+        'view': this.state.counter + 1,
+        'Title': 'test'
       });
       this.props.spHttpClient.post(`${this.props.context.pageContext.web.absoluteUrl}/_api/web/lists/GetByTitle('${this.LIST_NAME}')/items(${id})`, SPHttpClient.configurations.v1, {
         headers: {
